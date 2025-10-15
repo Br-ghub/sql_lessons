@@ -3,7 +3,7 @@ drop table if exists employees;
 
 -- creating a table
 create table if not exists employees(
-	employee_id INT,
+	employee_id INT Primary Key, -- primary key means this column must be unique
     first_name varchar(50), -- varchar is like a string that can be up to x characters
     last_name varchar(50),
     hourly_pay decimal(5,2), -- the first number is the maximum number of digits to store. The second number is how many digits can be to the right of the decimal
